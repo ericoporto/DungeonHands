@@ -19,8 +19,11 @@ def crop(Path, img_type, input, height, width):
             #except:
             #    print("error")
             #    pass
+            print("allcards[{0}]=\"{1}\";".format(k,item_name[k]))         
             k +=1
+           
             if(k==len(item_name)):
                 return
+           
             
 crop("cards_img","o","sheet.png",115,83)

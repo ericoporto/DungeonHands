@@ -3087,6 +3087,30 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
+                <FileName>Cards.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>480734020</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>Cards.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>480734020</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
                 <FileName>DragDrop.ash</FileName>
                 <Name />
                 <Description />
