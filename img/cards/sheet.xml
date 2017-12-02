@@ -1,56 +1,56 @@
 <TextureAtlas imagePath="sheet.png">
-	<SubTexture name="Warrior Level 1.png" x="0" y="0" width="85" height="113"/>
-	<SubTexture name="Mage Level 1.png" x="85" y="0" width="85" height="113"/>
-	<SubTexture name="Rogue Level 1.png" x="170" y="0" width="85" height="113"/>
-	<SubTexture name="Cleric Level 1.png" x="255" y="0" width="85" height="113"/>
-	<SubTexture name="Cat.png" x="340" y="0" width="85" height="113"/>
-	<SubTexture name="Dark Cat.png" x="425" y="0" width="85" height="113"/>
-	<SubTexture name="Flying Cat.png" x="510" y="0" width="85" height="113"/>
-	<SubTexture name="Cat Zombie.png" x="595" y="0" width="85" height="113"/>
-	<SubTexture name="Warrior Level 2.png" x="0" y="113" width="85" height="113"/>
-	<SubTexture name="Mage Level 2.png" x="85" y="113" width="85" height="113"/>
-	<SubTexture name="Rogue Level 2.png" x="170" y="113" width="85" height="113"/>
-	<SubTexture name="Cleric Level 2.png" x="255" y="113" width="85" height="113"/>
-	<SubTexture name="Kobold.png" x="340" y="113" width="85" height="113"/>
-	<SubTexture name="Frozen Kobold.png" x="425" y="113" width="85" height="113"/>
-	<SubTexture name="Kobold Trap.png" x="510" y="113" width="85" height="113"/>
-	<SubTexture name="Kobold Ghost.png" x="595" y="113" width="85" height="113"/>
-	<SubTexture name="Warrior Level 3.png" x="0" y="226" width="85" height="113"/>
-	<SubTexture name="Mage Level 3.png" x="85" y="226" width="85" height="113"/>
-	<SubTexture name="Rogue Level 3.png" x="170" y="226" width="85" height="113"/>
-	<SubTexture name="Cleric Level 3.png" x="255" y="226" width="85" height="113"/>
-	<SubTexture name="Goblin.png" x="340" y="226" width="85" height="113"/>
-	<SubTexture name="Icy Goblin.png" x="425" y="226" width="85" height="113"/>
-	<SubTexture name="Flying Goblin.png" x="510" y="226" width="85" height="113"/>
-	<SubTexture name="Kobold Zombie.png" x="595" y="226" width="85" height="113"/>
-	<SubTexture name="Warrior Level 4.png" x="0" y="339" width="85" height="113"/>
-	<SubTexture name="Mage Level 4.png" x="85" y="339" width="85" height="113"/>
-	<SubTexture name="Rogue Level 4.png" x="170" y="339" width="85" height="113"/>
-	<SubTexture name="Cleric Level 4.png" x="255" y="339" width="85" height="113"/>
-	<SubTexture name="Goblin Knight.png" x="340" y="339" width="85" height="113"/>
-	<SubTexture name="Mimic.png" x="425" y="339" width="85" height="113"/>
-	<SubTexture name="Trap Treasure.png" x="510" y="339" width="85" height="113"/>
-	<SubTexture name="Goblin Skeleton.png" x="595" y="339" width="85" height="113"/>
-	<SubTexture name="Warrior Level 5.png" x="0" y="452" width="85" height="113"/>
-	<SubTexture name="Mage Level 5.png" x="85" y="452" width="85" height="113"/>
-	<SubTexture name="Rogue Level 5.png" x="170" y="452" width="85" height="113"/>
-	<SubTexture name="Cleric Level 5.png" x="255" y="452" width="85" height="113"/>
-	<SubTexture name="Orc.png" x="340" y="452" width="85" height="113"/>
-	<SubTexture name="Magic Orc.png" x="425" y="452" width="85" height="113"/>
-	<SubTexture name="Balloon Orc.png" x="510" y="452" width="85" height="113"/>
-	<SubTexture name="Undead Orc.png" x="595" y="452" width="85" height="113"/>
-	<SubTexture name="Warrior Level 6.png" x="0" y="565" width="85" height="113"/>
-	<SubTexture name="Mage Level 6.png" x="85" y="565" width="85" height="113"/>
-	<SubTexture name="Rogue Level 6.png" x="170" y="565" width="85" height="113"/>
-	<SubTexture name="Cleric Level 6.png" x="255" y="565" width="85" height="113"/>
-	<SubTexture name="Giant Bear.png" x="340" y="565" width="85" height="113"/>
-	<SubTexture name="Giant Bear with Glasses.png" x="425" y="565" width="85" height="113"/>
-	<SubTexture name="Big Bat.png" x="510" y="565" width="85" height="113"/>
-	<SubTexture name="Vampire Cat Zombie.png" x="595" y="565" width="85" height="113"/>
-	<SubTexture name="Knowledge is Power.png" x="664" y="0" width="85" height="113"/>
-	<SubTexture name="Silence I want to read.png" x="664" y="113" width="85" height="113"/>
-	<SubTexture name="Everything is better on Fire.png" x="664" y="226" width="85" height="113"/>
-	<SubTexture name="Rainbow Union.png" x="664" y="339" width="85" height="113"/>
-	<SubTexture name="BackHero.png" x="664" y="452" width="85" height="113"/>
-	<SubTexture name="BackMonster.png" x="664" y="565" width="85" height="113"/>
+  <SubTexture name="Warrior Level 1.png" x="0" y="0" width="83" height="115"/>
+  <SubTexture name="Mage Level 1.png" x="83" y="0" width="83" height="115"/>
+  <SubTexture name="Rogue Level 1.png" x="166" y="0" width="83" height="115"/>
+  <SubTexture name="Cleric Level 1.png" x="249" y="0" width="83" height="115"/>
+  <SubTexture name="Cat.png" x="332" y="0" width="83" height="115"/>
+  <SubTexture name="Dark Cat.png" x="415" y="0" width="83" height="115"/>
+  <SubTexture name="Flying Cat.png" x="498" y="0" width="83" height="115"/>
+  <SubTexture name="Cat Zombie.png" x="581" y="0" width="83" height="115"/>
+  <SubTexture name="Knowledge is Power.png" x="664" y="0" width="83" height="115"/>
+  <SubTexture name="Warrior Level 2.png" x="0" y="115" width="83" height="115"/>
+  <SubTexture name="Mage Level 2.png" x="83" y="115" width="83" height="115"/>
+  <SubTexture name="Rogue Level 2.png" x="166" y="115" width="83" height="115"/>
+  <SubTexture name="Cleric Level 2.png" x="249" y="115" width="83" height="115"/>
+  <SubTexture name="Kobold.png" x="332" y="115" width="83" height="115"/>
+  <SubTexture name="Frozen Kobold.png" x="415" y="115" width="83" height="115"/>
+  <SubTexture name="Kobold Trap.png" x="498" y="115" width="83" height="115"/>
+  <SubTexture name="Kobold Ghost.png" x="581" y="115" width="83" height="115"/>
+  <SubTexture name="Silence I want to read.png" x="664" y="115" width="83" height="115"/>
+  <SubTexture name="Warrior Level 3.png" x="0" y="230" width="83" height="115"/>
+  <SubTexture name="Mage Level 3.png" x="83" y="230" width="83" height="115"/>
+  <SubTexture name="Rogue Level 3.png" x="166" y="230" width="83" height="115"/>
+  <SubTexture name="Cleric Level 3.png" x="249" y="230" width="83" height="115"/>
+  <SubTexture name="Goblin.png" x="332" y="230" width="83" height="115"/>
+  <SubTexture name="Icy Goblin.png" x="415" y="230" width="83" height="115"/>
+  <SubTexture name="Flying Goblin.png" x="498" y="230" width="83" height="115"/>
+  <SubTexture name="Kobold Zombie.png" x="581" y="230" width="83" height="115"/>
+  <SubTexture name="Everything is better on Fire.png" x="664" y="230" width="83" height="115"/>
+  <SubTexture name="Warrior Level 4.png" x="0" y="345" width="83" height="115"/>
+  <SubTexture name="Mage Level 4.png" x="83" y="345" width="83" height="115"/>
+  <SubTexture name="Rogue Level 4.png" x="166" y="345" width="83" height="115"/>
+  <SubTexture name="Cleric Level 4.png" x="249" y="345" width="83" height="115"/>
+  <SubTexture name="Goblin Knight.png" x="332" y="345" width="83" height="115"/>
+  <SubTexture name="Mimic.png" x="415" y="345" width="83" height="115"/>
+  <SubTexture name="Trap Treasure.png" x="498" y="345" width="83" height="115"/>
+  <SubTexture name="Goblin Skeleton.png" x="581" y="345" width="83" height="115"/>
+  <SubTexture name="Rainbow Union.png" x="664" y="345" width="83" height="115"/>
+  <SubTexture name="Warrior Level 5.png" x="0" y="460" width="83" height="115"/>
+  <SubTexture name="Mage Level 5.png" x="83" y="460" width="83" height="115"/>
+  <SubTexture name="Rogue Level 5.png" x="166" y="460" width="83" height="115"/>
+  <SubTexture name="Cleric Level 5.png" x="249" y="460" width="83" height="115"/>
+  <SubTexture name="Orc.png" x="332" y="460" width="83" height="115"/>
+  <SubTexture name="Magic Orc.png" x="415" y="460" width="83" height="115"/>
+  <SubTexture name="Balloon Orc.png" x="498" y="460" width="83" height="115"/>
+  <SubTexture name="Undead Orc.png" x="581" y="460" width="83" height="115"/>
+  <SubTexture name="BackHero.png" x="664" y="460" width="83" height="115"/>
+  <SubTexture name="Warrior Level 6.png" x="0" y="575" width="83" height="115"/>
+  <SubTexture name="Mage Level 6.png" x="83" y="575" width="83" height="115"/>
+  <SubTexture name="Rogue Level 6.png" x="166" y="575" width="83" height="115"/>
+  <SubTexture name="Cleric Level 6.png" x="249" y="575" width="83" height="115"/>
+  <SubTexture name="Giant Bear.png" x="332" y="575" width="83" height="115"/>
+  <SubTexture name="Giant Bear with Glasses.png" x="415" y="575" width="83" height="115"/>
+  <SubTexture name="Big Bat.png" x="498" y="575" width="83" height="115"/>
+  <SubTexture name="Vampire Cat Zombie.png" x="581" y="575" width="83" height="115"/>
+  <SubTexture name="BackMonster.png" x="664" y="575" width="83" height="115"/>
 </TextureAtlas>
