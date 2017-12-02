@@ -17280,8 +17280,8 @@ window.onload = function() {
 		{ preload: preload, create: create });
 
 	// grupo que contem todas as cartas em jogo
-	var heroCards;
-	var monsterCards;
+	var gHeroCards;
+	var gMonsterCards;
 
 	// todos os botoes da interface
 	var buttons = [];
@@ -17294,8 +17294,8 @@ window.onload = function() {
 		game.load.atlasXML('buttons', 'img/buttons/sprites.png', 'img/buttons/sprites.xml');
 		console.log("will load atlas...");
 		game.load.atlasXML('cards', 'img/cards/sheet.png', 'img/cards/sheet.xml');
-	}
 		console.log("atlas loaded!");
+	}
 
 	function create() {
 		addBackground();
@@ -17313,8 +17313,8 @@ window.onload = function() {
 
 		heroDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
-			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
-			var cardSprite = allCards.create(64, 88, 'cards', frameName);
+			var frameName = Decktet.cardName(card) + '.png';
+			var cardSprite = gHeroCards.create(64, 88, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
 			cardSprite.height = 113;
 			cardSprite.width = 85;
@@ -17331,8 +17331,8 @@ window.onload = function() {
 
 		monsterDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
-			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
-			var cardSprite = allCards.create(300, 88, 'cards', frameName);
+			var frameName = Decktet.cardName(card) + '.png';
+			var cardSprite = gMonsterCards.create(300, 88, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
 			cardSprite.height = 113;
 			cardSprite.width = 85;
@@ -17404,7 +17404,10 @@ window.onload = function() {
 	function onBtnTapClick() {
 		mode = "tap";
 		updateAllButtonsState();
-		allCards.forEach(function(card) {
+		gHeroCards.forEach(function(card) {
+			card.input.disableDrag();
+		});
+		gMonsterCards.forEach(function(card) {
 			card.input.disableDrag();
 		});
 	}
@@ -17413,7 +17416,10 @@ window.onload = function() {
 	function onBtnMoveClick() {
 		mode = "move";
 		updateAllButtonsState();
-		allCards.forEach(function(card) {
+		gHeroCards.forEach(function(card) {
+			card.input.enableDrag(false, true);
+		});
+		gMonsterCards.forEach(function(card) {
 			card.input.enableDrag(false, true);
 		});
 	}
