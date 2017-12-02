@@ -3,8 +3,8 @@ var _ = require('lodash'),
 
 window.onload = function() {
 
-	var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, '',
-		{ preload: preload, create: create });
+	var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'DungeonHands',
+		{ preload: preload, create: create },false,false);
 
 	// grupo que contem todas as cartas em jogo
 	var gHeroCards;
@@ -41,10 +41,10 @@ window.onload = function() {
 		heroDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
 			var frameName = Decktet.cardName(card) + '.png';
-			var cardSprite = gHeroCards.create(64, 88, 'cards', frameName);
+			var cardSprite = gHeroCards.create(170, 226, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
-			cardSprite.height = 113;
-			cardSprite.width = 85;
+			cardSprite.height = 226;
+			cardSprite.width = 170;
 
 			// inicialmente em modo "moving"
 			cardSprite.inputEnabled = true;
@@ -59,10 +59,10 @@ window.onload = function() {
 		monsterDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
 			var frameName = Decktet.cardName(card) + '.png';
-			var cardSprite = gMonsterCards.create(300, 88, 'cards', frameName);
+			var cardSprite = gMonsterCards.create(400, 226, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
-			cardSprite.height = 113;
-			cardSprite.width = 85;
+			cardSprite.height = 226;
+			cardSprite.width = 170;
 
 			// inicialmente em modo "moving"
 			cardSprite.inputEnabled = true;
