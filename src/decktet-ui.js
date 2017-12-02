@@ -19,8 +19,10 @@ window.onload = function() {
 	function preload () {
 		game.load.image('background', 'img/bg-green.jpg');
 		game.load.atlasXML('buttons', 'img/buttons/sprites.png', 'img/buttons/sprites.xml');
+		console.log("will load atlas...");
 		game.load.atlasXML('cards', 'img/cards/sheet.png', 'img/cards/sheet.xml');
 	}
+		console.log("atlas loaded!");
 
 	function create() {
 		addBackground();
@@ -41,8 +43,8 @@ window.onload = function() {
 			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
 			var cardSprite = allCards.create(64, 88, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
-			cardSprite.height = 176;
-			cardSprite.width = 128;
+			cardSprite.height = 113;
+			cardSprite.width = 85;
 
 			// inicialmente em modo "moving"
 			cardSprite.inputEnabled = true;
@@ -57,10 +59,10 @@ window.onload = function() {
 		monsterDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
 			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
-			var cardSprite = allCards.create(64, 88, 'cards', frameName);
+			var cardSprite = allCards.create(300, 88, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
-			cardSprite.height = 176;
-			cardSprite.width = 128;
+			cardSprite.height = 113;
+			cardSprite.width = 85;
 
 			// inicialmente em modo "moving"
 			cardSprite.inputEnabled = true;

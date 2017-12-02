@@ -3,8 +3,8 @@ var _ = require('lodash')
 
 const Suits = [ "Warrior", "Mage", "Rogue", "Cleric" ],
       Ranks = [ "1", "2", "3", "4", "5", "6"],
-      Type = [ "C","S"],
-      Cards = [
+      Types = [ "C","S"],
+      HeroCards = [
     		{ rank: "1", suits: [ "Warrior" ], Type: "C", Name: "Warrior Level 1", Text:"" },
     		{ rank: "1", suits: [ "Mage" ], Type: "C", Name: "Mage Level 1", Text:"" },
     		{ rank: "1", suits: [ "Rogue" ], Type: "C", Name: "Rogue Level 1", Text:""},
@@ -36,7 +36,44 @@ const Suits = [ "Warrior", "Mage", "Rogue", "Cleric" ],
     		{ rank: "6", suits: [ "Cleric" ], Type: "C" , Name: "Cleric Level 6", Text:""},
     		
     		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Knowledge is Power", Text:"Draw two cards at the end of the turn."  },
-    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Silence I want to read.", Text:"Your oponent can't play cards this turn. They draw an adittional card."  },
+    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Silence I want to read", Text:"Your oponent can't play cards this turn. They draw an adittional card."  },
+    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Everything is better on Fire", Text:"Your cards have level +1. Play a card. If you can't play a card, draw two cards." },
+    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Rainbow Union", Text:"Your cards have any color and you play two cards. The resulting level is the sum."  }
+    	],
+    	
+      MonsterCards = [
+    		{ rank: "1", suits: [ "Warrior" ], Type: "C", Name: "Cat", Text:"" },
+    		{ rank: "1", suits: [ "Mage" ], Type: "C", Name: "Dark Cat", Text:"" },
+    		{ rank: "1", suits: [ "Rogue" ], Type: "C", Name: "Flying Cat", Text:""},
+    		{ rank: "1", suits: [ "Cleric" ], Type: "C", Name: "Cat Zombie", Text:""},
+
+    		{ rank: "2", suits: [ "Warrior" ], Type: "C", Name: "Kobold", Text:""},
+    		{ rank: "2", suits: [ "Mage" ], Type: "C" , Name: "Frozen Kobold", Text:""},
+    		{ rank: "2", suits: [ "Rogue" ], Type: "C" , Name: "Kobold Trap", Text:""},
+    		{ rank: "2", suits: [ "Cleric" ], Type: "C" , Name: "Kobold Ghost", Text:""},
+
+    		{ rank: "3", suits: [ "Warrior" ], Type: "C" , Name: "Goblin", Text:""},
+    		{ rank: "3", suits: [ "Mage" ], Type: "C" , Name: "Icy Goblin", Text:""},
+    		{ rank: "3", suits: [ "Rogue" ], Type: "C" , Name: "Flying Goblin", Text:""},
+    		{ rank: "3", suits: [ "Cleric" ], Type: "C", Name: "Kobold Zombie", Text:"" },
+
+    		{ rank: "4", suits: [ "Warrior" ], Type: "C" , Name: "Goblin Knight", Text:""},
+    		{ rank: "4", suits: [ "Mage" ], Type: "C", Name: "Mimic", Text:"" },
+    		{ rank: "4", suits: [ "Rogue" ], Type: "C" , Name: "Trap Treasure", Text:""},
+    		{ rank: "4", suits: [ "Cleric" ], Type: "C", Name: "Goblin Skeleton", Text:"" },
+
+    		{ rank: "5", suits: [ "Warrior" ], Type: "C", Name: "Orc", Text:"" },
+    		{ rank: "5", suits: [ "Mage" ], Type: "C" , Name: "Magic Orc", Text:""},
+    		{ rank: "5", suits: [ "Rogue" ], Type: "C" , Name: "Balloon Orc", Text:""},
+    		{ rank: "5", suits: [ "Cleric" ], Type: "C" , Name: "Undead Orc", Text:""},
+    		
+    		{ rank: "6", suits: [ "Warrior" ], Type: "C", Name: "Giant Bear", Text:"" },
+    		{ rank: "6", suits: [ "Mage" ], Type: "C" , Name: "Giant Bear with Glasses", Text:""},
+    		{ rank: "6", suits: [ "Rogue" ], Type: "C" , Name: "Big Bat", Text:""},
+    		{ rank: "6", suits: [ "Cleric" ], Type: "C" , Name: "Vampire Cat Zombie", Text:""},
+    		
+    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Knowledge is Power", Text:"Draw two cards at the end of the turn."  },
+    		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Silence I want to read", Text:"Your oponent can't play cards this turn. They draw an adittional card."  },
     		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Everything is better on Fire", Text:"Your cards have level +1. Play a card. If you can't play a card, draw two cards." },
     		{ rank: "0", suits: [ "Warrior","Mage","Rogue","Cleric" ], Type: "S", Name: "Rainbow Union", Text:"Your cards have any color and you play two cards. The resulting level is the sum."  }
     	]
@@ -133,11 +170,11 @@ function rankComparator(arr) {
 }
 
 function cardName(card) {
-	return card.rank + ' of ' + card.suits.join( ' and ' );
+	return card.Name
 }
 
 module.exports = {
-  Ranks, Suits, Cards,
+  Ranks, Suits, Types, MonsterCards, HeroCards,
   countBySuit, countByRank,
   shareOneSuit, shareOneRank,
   rankComparator, cardName, shuffle,
@@ -17243,7 +17280,8 @@ window.onload = function() {
 		{ preload: preload, create: create });
 
 	// grupo que contem todas as cartas em jogo
-	var allCards;
+	var heroCards;
+	var monsterCards;
 
 	// todos os botoes da interface
 	var buttons = [];
@@ -17254,27 +17292,32 @@ window.onload = function() {
 	function preload () {
 		game.load.image('background', 'img/bg-green.jpg');
 		game.load.atlasXML('buttons', 'img/buttons/sprites.png', 'img/buttons/sprites.xml');
+		console.log("will load atlas...");
 		game.load.atlasXML('cards', 'img/cards/sheet.png', 'img/cards/sheet.xml');
 	}
+		console.log("atlas loaded!");
 
 	function create() {
 		addBackground();
 		addUiButtons();
 
 		// copia a lista de todas as cartas e embaralha.
-		var deck = _.cloneDeep(Decktet.Cards);
-		Decktet.shuffle(deck);
+		var heroDeck = _.cloneDeep(Decktet.HeroCards);
+		Decktet.shuffle(heroDeck);
+		var monsterDeck = _.cloneDeep(Decktet.MonsterCards);
+		Decktet.shuffle(monsterDeck);
 
 		// PhaserGroup que ira conter todas as cartas
-		allCards = game.add.group();
+		gHeroCards = game.add.group();
+		gMonsterCards = game.add.group();
 
-		deck.forEach(function(card) {
+		heroDeck.forEach(function(card) {
 			// Cria uma sprite para cada carta.
 			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
 			var cardSprite = allCards.create(64, 88, 'cards', frameName);
 			cardSprite.anchor.setTo(0.5, 0.5);
-			cardSprite.height = 176;
-			cardSprite.width = 128;
+			cardSprite.height = 113;
+			cardSprite.width = 85;
 
 			// inicialmente em modo "moving"
 			cardSprite.inputEnabled = true;
@@ -17284,6 +17327,24 @@ window.onload = function() {
 			// registra esta funcao para ser executada sempre que a carta for clicada
 			cardSprite.events.onInputDown.add(onCardClick);
 		});
+		
+
+		monsterDeck.forEach(function(card) {
+			// Cria uma sprite para cada carta.
+			var frameName = Decktet.cardName(card).toLowerCase() + '.png';
+			var cardSprite = allCards.create(300, 88, 'cards', frameName);
+			cardSprite.anchor.setTo(0.5, 0.5);
+			cardSprite.height = 113;
+			cardSprite.width = 85;
+
+			// inicialmente em modo "moving"
+			cardSprite.inputEnabled = true;
+			cardSprite.input.enableDrag(false, true);
+			cardSprite.input.enableSnap(16, 16, true, true);
+
+			// registra esta funcao para ser executada sempre que a carta for clicada
+			cardSprite.events.onInputDown.add(onCardClick);
+		});		
 	}
 
 	function addBackground() {
