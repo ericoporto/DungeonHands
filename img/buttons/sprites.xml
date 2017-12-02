@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="sprites.png">
+	<!--
+	Created with ShoeBox
+	http://renderhjs.net/shoebox/
+	-->
+	<SubTexture name="btnFullscreenOff.png"	x="204"	y="611"	width="203"	height="202" frameX="-0" frameY="-0" frameWidth="203" frameHeight="202"/>
+	<SubTexture name="btnFullscreenOn.png"	x="408"	y="0"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnFullscreenOver.png"	x="204"	y="814"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnMoveOff.png"	x="408"	y="815"	width="202"	height="202" frameX="-0" frameY="-0" frameWidth="202" frameHeight="202"/>
+	<SubTexture name="btnMoveOn.png"	x="408"	y="611"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnMoveOver.png"	x="408"	y="407"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnResetOff.png"	x="408"	y="204"	width="203"	height="202" frameX="-0" frameY="-0" frameWidth="203" frameHeight="202"/>
+	<SubTexture name="btnResetOn.png"	x="612"	y="204"	width="202"	height="203" frameX="-0" frameY="-0" frameWidth="202" frameHeight="203"/>
+	<SubTexture name="btnResetOver.png"	x="612"	y="0"	width="202"	height="203" frameX="-0" frameY="-0" frameWidth="202" frameHeight="203"/>
+	<SubTexture name="btnSettingsOff.png"	x="0"	y="408"	width="203"	height="202" frameX="-0" frameY="-0" frameWidth="203" frameHeight="202"/>
+	<SubTexture name="btnSettingsOn.png"	x="204"	y="407"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnSettingsOver.png"	x="204"	y="203"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnTapOff.png"	x="204"	y="0"	width="203"	height="202" frameX="-0" frameY="-0" frameWidth="203" frameHeight="202"/>
+	<SubTexture name="btnTapOn.png"	x="0"	y="815"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnTapOver.png"	x="0"	y="611"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnTargetOff.png"	x="611"	y="815"	width="202"	height="202" frameX="-0" frameY="-0" frameWidth="202" frameHeight="202"/>
+	<SubTexture name="btnTargetOn.png"	x="0"	y="204"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+	<SubTexture name="btnTargetOver.png"	x="0"	y="0"	width="203"	height="203" frameX="-0" frameY="-0" frameWidth="203" frameHeight="203"/>
+</TextureAtlas>

@@ -1,0 +1,42 @@
+<TextureAtlas imagePath="sheet.png">
+	<SubTexture name="2 of moons and knots.png" x="1897" y="2648" width="377" height="528"/>
+	<SubTexture name="2 of suns and wyrms.png" x="1897" y="3178" width="377" height="528"/>
+	<SubTexture name="2 of waves and leaves.png" x="0" y="1060" width="378" height="528"/>
+	<SubTexture name="3 of leaves and wyrms.png" x="0" y="1590" width="378" height="528"/>
+	<SubTexture name="3 of moons and waves.png" x="0" y="2120" width="378" height="528"/>
+	<SubTexture name="3 of suns and knots.png" x="380" y="1060" width="378" height="528"/>
+	<SubTexture name="4 of moons and suns.png" x="1519" y="530" width="377" height="528"/>
+	<SubTexture name="4 of waves and leaves.png" x="1519" y="0" width="377" height="528"/>
+	<SubTexture name="4 of wyrms and knots.png" x="1518" y="3178" width="377" height="528"/>
+	<SubTexture name="5 of moons and leaves.png" x="1518" y="2648" width="377" height="528"/>
+	<SubTexture name="5 of suns and waves.png" x="1518" y="2118" width="377" height="528"/>
+	<SubTexture name="5 of wyrms and knots.png" x="1518" y="1588" width="377" height="528"/>
+	<SubTexture name="6 of leaves and knots.png" x="380" y="1590" width="378" height="528"/>
+	<SubTexture name="6 of moons and waves.png" x="380" y="3180" width="378" height="528"/>
+	<SubTexture name="6 of suns and wyrms.png" x="380" y="2650" width="378" height="528"/>
+	<SubTexture name="7 of moons and leaves.png" x="1139" y="3178" width="377" height="528"/>
+	<SubTexture name="7 of suns and knots.png" x="760" y="1059" width="378" height="528"/>
+	<SubTexture name="7 of waves and wyrms.png" x="1139" y="2119" width="377" height="528"/>
+	<SubTexture name="8 of moons and suns.png" x="1139" y="1589" width="377" height="528"/>
+	<SubTexture name="8 of waves and leaves.png" x="760" y="529" width="378" height="528"/>
+	<SubTexture name="8 of wyrms and knots.png" x="1898" y="0" width="377" height="528"/>
+	<SubTexture name="9 of leaves and knots.png" x="0" y="0" width="378" height="528"/>
+	<SubTexture name="9 of moons and suns.png" x="380" y="530" width="378" height="528"/>
+	<SubTexture name="9 of waves and wyrms.png" x="0" y="3179" width="378" height="528"/>
+	<SubTexture name="ace of knots.png" x="760" y="0" width="378" height="527"/>
+	<SubTexture name="ace of leaves.png" x="760" y="1589" width="377" height="527"/>
+	<SubTexture name="ace of moons.png" x="760" y="2118" width="377" height="527"/>
+	<SubTexture name="ace of suns.png" x="1139" y="2649" width="377" height="527"/>
+	<SubTexture name="ace of waves.png" x="380" y="2120" width="378" height="528"/>
+	<SubTexture name="ace of wyrms.png" x="760" y="3177" width="377" height="527"/>
+	<SubTexture name="court of moons, leaves and wyrms.png" x="1140" y="529" width="377" height="527"/>
+	<SubTexture name="court of moons, waves and knots.png" x="1140" y="1058" width="377" height="528"/>
+	<SubTexture name="court of suns, leaves and knots.png" x="380" y="0" width="378" height="528"/>
+	<SubTexture name="court of suns, waves and wyrms.png" x="1140" y="0" width="377" height="527"/>
+	<SubTexture name="crown of knots.png" x="0" y="2650" width="378" height="527"/>
+	<SubTexture name="crown of leaves.png" x="760" y="2647" width="377" height="528"/>
+	<SubTexture name="crown of moons.png" x="1897" y="1060" width="377" height="527"/>
+	<SubTexture name="crown of suns.png" x="1897" y="1589" width="377" height="527"/>
+	<SubTexture name="crown of waves.png" x="0" y="530" width="378" height="528"/>
+	<SubTexture name="crown of wyrms.png" x="1897" y="2118" width="377" height="528"/>
+</TextureAtlas>

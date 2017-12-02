@@ -1,0 +1,26 @@
+{
+  "name": "decktet-ui-simple",
+  "version": "1.0.0",
+  "description": "This project provides a \"playing board\" of Decktet cards. The board starts\r out with one copy of the Basic Decktet on the top left. The user may move\r cards around and rotate them 90 degrees.",
+  "main": "phaser.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify ./src/decktet-ui.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stnever/decktet-ui-simple.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stnever/decktet-ui-simple/issues"
+  },
+  "homepage": "https://github.com/stnever/decktet-ui-simple#readme",
+  "dependencies": {
+    "browserify": "^14.5.0",
+    "lodash": "^4.17.4",
+    "decktet-utils": "stnever/decktet-utils"
+  }
+}
