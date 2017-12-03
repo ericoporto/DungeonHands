@@ -8,6 +8,8 @@ import int Cards_HC_ItemToCard(InventoryItem * invItm);
 import int Cards_MC_ItemToCard(InventoryItem * invItm);
 import int Card_HC_getCardRank(int i);
 import int Card_MC_getCardRank(int i);
+import int Card_HC_getCardGraphic(int i);
+import int Card_MC_getCardGraphic(int i);
 import int Card_HC_getCardColor(int i);
 import int Card_MC_getCardColor(int i);
 import bool Card_HC_isCardSpecial(int i);

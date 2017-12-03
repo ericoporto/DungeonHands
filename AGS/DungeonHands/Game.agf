@@ -3,7 +3,7 @@
 <AGSEditorDocument Version="3.0.3.2" VersionIndex="13" EditorVersion="3.4.0">
   <Game>
     <Settings>
-      <GameName>DragDropDemo</GameName>
+      <GameName xml:space="preserve">Dungeon Hands</GameName>
       <UniqueID>31093932</UniqueID>
       <GUIDAsString>{8ea34a44-34fa-4b4c-bf6b-5df3f7c93840}</GUIDAsString>
       <ColorDepth>TrueColor</ColorDepth>
@@ -72,7 +72,7 @@
       <DeveloperURL />
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
-      <SaveGameFolderName>DragDropDemo</SaveGameFolderName>
+      <SaveGameFolderName xml:space="preserve">Dungeon Hands</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
       <AudioIndexer>0</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
@@ -1140,6 +1140,26 @@
               <BackgroundImage>62</BackgroundImage>
               <ID>8</ID>
               <Name>gDeckHero</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>113</Height>
+              <Width>85</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>False</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>4</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>9</ID>
+              <Name>gFloatingDrawCard</Name>
             </NormalGUI>
             <Controls />
           </GUIMain>
