@@ -1128,7 +1128,7 @@
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>71</BackgroundImage>
+              <BackgroundImage>62</BackgroundImage>
               <ID>7</ID>
               <Name>gDeckMonster</Name>
             </NormalGUI>
@@ -1148,7 +1148,7 @@
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>62</BackgroundImage>
+              <BackgroundImage>71</BackgroundImage>
               <ID>8</ID>
               <Name>gDeckHero</Name>
             </NormalGUI>

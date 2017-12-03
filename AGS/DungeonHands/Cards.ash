@@ -24,8 +24,8 @@ import void Cards_SetCardItemDisable(InventoryItem * icard);
 import void Cards_SetCardItemEnable(InventoryItem * icard);
 import bool Cards_isItemMonster(InventoryItem * invItm);
 
-#define CARD_BACK_HERO_GRAPHIC 62
-#define CARD_BACK_MONSTER_GRAPHIC 71
+#define CARD_BACK_HERO_GRAPHIC 71
+#define CARD_BACK_MONSTER_GRAPHIC 62
 
 
 #define CCOLOR_GREEN 0
