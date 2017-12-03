@@ -21,8 +21,8 @@
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <PixelPerfect>True</PixelPerfect>
       <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
-      <GUIAlphaStyle>AdditiveOpacity</GUIAlphaStyle>
-      <SpriteAlphaStyle>Classic</SpriteAlphaStyle>
+      <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
+      <SpriteAlphaStyle>Improved</SpriteAlphaStyle>
       <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
       <InventoryHotspotMarkerStyle>None</InventoryHotspotMarkerStyle>
       <InventoryHotspotMarkerSprite>0</InventoryHotspotMarkerSprite>
@@ -35,7 +35,7 @@
       <HandleInvClicksInScript>False</HandleInvClicksInScript>
       <DisplayMultipleInventory>True</DisplayMultipleInventory>
       <ScriptAPIVersion>v340</ScriptAPIVersion>
-      <ScriptCompatLevel>v321</ScriptCompatLevel>
+      <ScriptCompatLevel>v340</ScriptCompatLevel>
       <EnforceObjectBasedScript>True</EnforceObjectBasedScript>
       <EnforceNewStrings>True</EnforceNewStrings>
       <EnforceNewAudio>True</EnforceNewAudio>
@@ -74,7 +74,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Dungeon Hands</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>1</AudioIndexer>
+      <AudioIndexer>2</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
     </Settings>
     <LipSync>
@@ -1076,13 +1076,13 @@
             <NormalGUI>
               <OnClick>gDebugPlay_OnClick</OnClick>
               <Height>24</Height>
-              <Width>100</Width>
+              <Width>80</Width>
               <Left>0</Left>
-              <Top>0</Top>
+              <Top>140</Top>
               <Clickable>True</Clickable>
               <Visibility>Normal</Visibility>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -1102,10 +1102,10 @@
                 <PushedImage>0</PushedImage>
                 <MouseoverImage>0</MouseoverImage>
                 <Image>0</Image>
-                <Text xml:space="preserve">nxt turn</Text>
+                <Text xml:space="preserve">no rlz</Text>
                 <Height>24</Height>
                 <Locked>False</Locked>
-                <Width>100</Width>
+                <Width>80</Width>
                 <Left>0</Left>
                 <Top>0</Top>
                 <ZOrder>0</ZOrder>
@@ -1173,6 +1173,41 @@
               <Name>gFloatingDrawCard</Name>
             </NormalGUI>
             <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>24</Height>
+              <Width>200</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>False</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>10</ID>
+              <Name>gActionText</Name>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>65304</TextColor>
+                <Font>1</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>32</Height>
+                <Locked>False</Locked>
+                <Width>200</Width>
+                <Left>2</Left>
+                <Top>2</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>lblActionText</Name>
+              </GUILabel>
+            </Controls>
           </GUIMain>
         </GUIs>
       </GUIFolder>
@@ -2702,7 +2737,7 @@
         <PointSize>0</PointSize>
         <Name xml:space="preserve">Font 1</Name>
         <OutlineFont>2</OutlineFont>
-        <OutlineStyle>None</OutlineStyle>
+        <OutlineStyle>UseOutlineFont</OutlineStyle>
         <SourceFilename />
       </Font>
       <Font>
@@ -3380,23 +3415,23 @@
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
-                <FileName>MusicPlayer.ash</FileName>
+                <FileName>InventoryMonitor.ash</FileName>
                 <Name />
                 <Description />
                 <Author />
                 <Version />
-                <Key>798640466</Key>
+                <Key>1959313414</Key>
                 <IsHeader>True</IsHeader>
               </Script>
             </ScriptAndHeader_Header>
             <ScriptAndHeader_Script>
               <Script>
-                <FileName>MusicPlayer.asc</FileName>
+                <FileName>InventoryMonitor.asc</FileName>
                 <Name />
                 <Description />
                 <Author />
                 <Version />
-                <Key>798640466</Key>
+                <Key>1959313414</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>
@@ -3445,6 +3480,30 @@
                 <Author />
                 <Version />
                 <Key>1006567878</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>actionBar.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>817470126</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>actionBar.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>817470126</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>
@@ -3557,9 +3616,9 @@
               <AudioClip>
                 <ScriptName>aTheme_1</ScriptName>
                 <SourceFileName>audio/theme_1.mp3</SourceFileName>
-                <Index>1</Index>
+                <Index>2</Index>
                 <Type>2</Type>
-                <BundlingType>InSeparateVOX</BundlingType>
+                <BundlingType>InGameEXE</BundlingType>
                 <FileType>MP3</FileType>
                 <DefaultVolume>-1</DefaultVolume>
                 <DefaultPriority>Inherit</DefaultPriority>
@@ -3569,9 +3628,9 @@
             </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
-              <DefaultPriority>Inherit</DefaultPriority>
+              <DefaultPriority>High</DefaultPriority>
               <DefaultRepeat>True</DefaultRepeat>
-              <DefaultBundlingType>InSeparateVOX</DefaultBundlingType>
+              <DefaultBundlingType>InGameEXE</DefaultBundlingType>
               <DefaultType>2</DefaultType>
             </AudioClipFolder>
           </AudioClipFolder>
@@ -3617,7 +3676,7 @@
       <AudioClipType>
         <Name>Sound</Name>
         <TypeID>3</TypeID>
-        <MaxChannels>0</MaxChannels>
+        <MaxChannels>5</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>False</BackwardsCompatibilityType>
