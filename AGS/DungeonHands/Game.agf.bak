@@ -1103,6 +1103,46 @@
               </GUIButton>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick>gDeckMonster_OnClic</OnClick>
+              <Height>115</Height>
+              <Width>83</Width>
+              <Left>555</Left>
+              <Top>243</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>71</BackgroundImage>
+              <ID>7</ID>
+              <Name>gDeckMonster</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick>gDeckHero_OnClick</OnClick>
+              <Height>115</Height>
+              <Width>83</Width>
+              <Left>2</Left>
+              <Top>2</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>62</BackgroundImage>
+              <ID>8</ID>
+              <Name>gDeckHero</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
