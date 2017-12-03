@@ -74,7 +74,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Dungeon Hands</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>1</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
     </Settings>
     <LipSync>
@@ -114,6 +114,17 @@
         <AppliesToObjects>True</AppliesToObjects>
         <AppliesToRooms>False</AppliesToRooms>
         <Type>Text</Type>
+      </CustomPropertySchemaItem>
+      <CustomPropertySchemaItem>
+        <Name>boolDisableDrag</Name>
+        <Description xml:space="preserve">if true, disables drag and drop for thing.</Description>
+        <DefaultValue>0</DefaultValue>
+        <AppliesToCharacters>False</AppliesToCharacters>
+        <AppliesToHotspots>False</AppliesToHotspots>
+        <AppliesToInvItems>True</AppliesToInvItems>
+        <AppliesToObjects>False</AppliesToObjects>
+        <AppliesToRooms>False</AppliesToRooms>
+        <Type>Boolean</Type>
       </CustomPropertySchemaItem>
     </PropertyDefinitions>
     <GlobalMessages>
@@ -1322,7 +1333,7 @@
             <CursorImage>0</CursorImage>
             <Image>26</Image>
             <Description xml:space="preserve">New inventory item</Description>
-            <Name>i_008_SP1</Name>
+            <Name>i_008_H_SP1</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -1484,7 +1495,7 @@
             <CursorImage>0</CursorImage>
             <Image>35</Image>
             <Description xml:space="preserve">Silence I want to read</Description>
-            <Name>i_017_SP2</Name>
+            <Name>i_017_H_SP2</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -1646,7 +1657,7 @@
             <CursorImage>0</CursorImage>
             <Image>44</Image>
             <Description xml:space="preserve">Everythin Is Better On Fire</Description>
-            <Name>i_026_SP3</Name>
+            <Name>i_026_H_SP3</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -1808,7 +1819,7 @@
             <CursorImage>0</CursorImage>
             <Image>53</Image>
             <Description xml:space="preserve">New inventory item</Description>
-            <Name>i_035_SP4</Name>
+            <Name>i_035_H_SP4</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -2133,6 +2144,78 @@
             <Image>71</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>i_053_B2</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>55</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>13</Image>
+            <Description xml:space="preserve">New inventory item</Description>
+            <Name>i_054_M_SP1</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>56</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>11</Image>
+            <Description xml:space="preserve">New inventory item</Description>
+            <Name>i_055_M_SP2</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>57</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>44</Image>
+            <Description xml:space="preserve">New inventory item</Description>
+            <Name>i_056_M_SP3</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>58</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>53</Image>
+            <Description xml:space="preserve">New inventory item</Description>
+            <Name>i_057_M_SP4</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -3170,6 +3253,16 @@
               </Sprite>
             </Sprites>
           </SpriteFolder>
+          <SpriteFolder Name="DisabledCard">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="72" Width="83" Height="115" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/disabled_card/disabled_card.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
         </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="1" Height="1" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
@@ -3280,6 +3373,30 @@
                 <Author>Edmundo Ruiz et al.</Author>
                 <Version>2.1.0</Version>
                 <Key>1249765699</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>MusicPlayer.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>798640466</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>MusicPlayer.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>798640466</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>
@@ -3436,7 +3553,20 @@
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aTheme_1</ScriptName>
+                <SourceFileName>audio/theme_1.mp3</SourceFileName>
+                <Index>1</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MP3</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2017-12-03 12:53:39Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
@@ -3481,7 +3611,7 @@
         <TypeID>2</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
-        <CrossfadeClips>No</CrossfadeClips>
+        <CrossfadeClips>SlowFade</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
