@@ -11,3 +11,5 @@ import Character * Play_Get_Char_Hero();
 import void Play_zeroItems();
 import void Play_disableRules();
 import void Play_enableRules();
+import bool Play_isTurnHero();
+import bool Play_isTurnMonster();
