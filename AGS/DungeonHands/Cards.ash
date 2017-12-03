@@ -16,6 +16,8 @@ import bool Card_HC_isCardSpecial(int i);
 import bool Card_MC_isCardSpecial(int i);
 import void Cards_HC_EnableAllDrag();
 import void Cards_MC_EnableAllDrag();
+import void Cards_SetCardItemDisable(InventoryItem * icard);
+import void Cards_SetCardItemEnable(InventoryItem * icard);
 import bool Cards_isItemMonster(InventoryItem * invItm);
 
 #define CARD_BACK_HERO_GRAPHIC 62
