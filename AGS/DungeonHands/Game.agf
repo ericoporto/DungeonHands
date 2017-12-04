@@ -1528,7 +1528,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>35</Image>
+            <Image>26</Image>
             <Description xml:space="preserve">Silence I want to read</Description>
             <Name>i_017_H_SP2</Name>
             <Properties />
@@ -1852,7 +1852,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>53</Image>
+            <Image>44</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>i_035_H_SP4</Name>
             <Properties />
@@ -2194,7 +2194,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>13</Image>
+            <Image>35</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>i_054_M_SP1</Name>
             <Properties />
@@ -2212,7 +2212,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>11</Image>
+            <Image>35</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>i_055_M_SP2</Name>
             <Properties />
@@ -2230,7 +2230,7 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>44</Image>
+            <Image>53</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>i_056_M_SP3</Name>
             <Properties />

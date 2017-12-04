@@ -33,4 +33,5 @@ import bool Cards_isItemMonster(InventoryItem * invItm);
 #define CCOLOR_YELLOW 2
 #define CCOLOR_RED 3
 #define CCOLOR_GRAY 4
-#define RANK_SP 8
+#define RANK_SP1 8
+#define RANK_SP2 9
