@@ -74,7 +74,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Dungeon Hands</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>2</AudioIndexer>
+      <AudioIndexer>3</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
     </Settings>
     <LipSync>
@@ -636,28 +636,8 @@
         <SubFolders />
         <UnloadedRooms>
           <UnloadedRoom>
-            <Number>1</Number>
-            <Description xml:space="preserve">Drag Info</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
-            <Number>2</Number>
-            <Description xml:space="preserve">Drag Rectangle</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
-            <Number>3</Number>
-            <Description xml:space="preserve">Drag Objects</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
-            <Number>4</Number>
-            <Description xml:space="preserve">Drag Inventory</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
-            <Number>301</Number>
-            <Description>Start</Description>
-          </UnloadedRoom>
-          <UnloadedRoom>
             <Number>5</Number>
-            <Description IsNull="True" />
+            <Description>mainRoom</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -963,7 +943,7 @@
               <ZOrder>0</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
-              <BackgroundColor>1560</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>2</ID>
               <Name>gItemExchange1</Name>
@@ -997,7 +977,7 @@
               <ZOrder>0</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
-              <BackgroundColor>65304</BackgroundColor>
+              <BackgroundColor>0</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>3</ID>
               <Name>gItemExchange2</Name>
@@ -1080,7 +1060,7 @@
               <Left>0</Left>
               <Top>140</Top>
               <Clickable>True</Clickable>
-              <Visibility>Normal</Visibility>
+              <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>2</ZOrder>
               <BorderColor>0</BorderColor>
@@ -1188,26 +1168,46 @@
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>0</BackgroundImage>
+              <BackgroundImage>75</BackgroundImage>
               <ID>10</ID>
               <Name>gActionText</Name>
             </NormalGUI>
             <Controls>
               <GUILabel>
                 <TextAlignment>TopLeft</TextAlignment>
-                <TextColor>65304</TextColor>
-                <Font>1</Font>
+                <TextColor>52752</TextColor>
+                <Font>3</Font>
                 <Text xml:space="preserve">New Label</Text>
                 <Height>32</Height>
                 <Locked>False</Locked>
                 <Width>200</Width>
-                <Left>2</Left>
-                <Top>2</Top>
+                <Left>1</Left>
+                <Top>0</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>lblActionText</Name>
               </GUILabel>
             </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>360</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>73</BackgroundImage>
+              <ID>11</ID>
+              <Name>gTitleGui</Name>
+            </NormalGUI>
+            <Controls />
           </GUIMain>
         </GUIs>
       </GUIFolder>
@@ -2748,6 +2748,14 @@
         <OutlineStyle>None</OutlineStyle>
         <SourceFilename />
       </Font>
+      <Font>
+        <ID>3</ID>
+        <PointSize>10</PointSize>
+        <Name>FontBeanStalk</Name>
+        <OutlineFont>0</OutlineFont>
+        <OutlineStyle>Automatic</OutlineStyle>
+        <SourceFilename>img/Beanstalk.ttf</SourceFilename>
+      </Font>
     </Fonts>
     <Palette>
       <PaletteEntry Index="0" Type="Gamewide" Red="0" Green="0" Blue="0" />
@@ -3298,6 +3306,44 @@
               </Sprite>
             </Sprites>
           </SpriteFolder>
+          <SpriteFolder Name="SplashScreen">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="73" Width="640" Height="360" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>img/splashscreen/splashscreen.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Cursor_Monster">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="Cursor_Hero">
+            <SubFolders />
+            <Sprites />
+          </SpriteFolder>
+          <SpriteFolder Name="Rules">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="74" Width="630" Height="360" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>img/rules/rules.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="actionBar">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="75" Width="400" Height="400" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/actionbar/bg.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
         </SubFolders>
         <Sprites>
           <Sprite Slot="0" Width="1" Height="1" ColorDepth="8" Resolution="LowRes" AlphaChannel="False" />
@@ -3616,14 +3662,14 @@
               <AudioClip>
                 <ScriptName>aTheme_1</ScriptName>
                 <SourceFileName>audio/theme_1.mp3</SourceFileName>
-                <Index>2</Index>
+                <Index>3</Index>
                 <Type>2</Type>
                 <BundlingType>InGameEXE</BundlingType>
                 <FileType>MP3</FileType>
                 <DefaultVolume>-1</DefaultVolume>
                 <DefaultPriority>Inherit</DefaultPriority>
                 <DefaultRepeat>Inherit</DefaultRepeat>
-                <FileLastModifiedDate>2017-12-03 12:53:39Z</FileLastModifiedDate>
+                <FileLastModifiedDate>2017-12-04 19:20:08Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
