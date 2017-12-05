@@ -1,0 +1,1 @@
+Hey! I made the game and use Ubuntu 16.04 . On one of my machines it works and in the other is very slow. I have no idea why but I need to submit this to Ludum Dare. If it's slow, you have to run the DungeonHands.exe in the folder data using Wine. This exe is not the same exe submited to itchio. Sorry. :/

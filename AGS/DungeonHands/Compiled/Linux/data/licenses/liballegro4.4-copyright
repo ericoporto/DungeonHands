@@ -1,0 +1,166 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Allegro 4
+Source: http://liballeg.org/
+
+Files: *
+Copyright: 1996-2011 Shawn Hargreaves and the Allegro developers.
+License: Allegro-gift-ware
+
+Files: addons/allegrogl/*
+Copyright: AllegroGL contributors
+License: Zlib or GPL-2+
+
+Files: addons/allegrogl/src/amesa/direct.h
+Copyright: 1995-1998  Brian Paul
+License: LGPL-2+
+
+Files: addons/allegrogl/include/GL/glut.h
+Copyright: Copyright (c) Mark J. Kilgard, 1994, 1995, 1996, 1998.
+License: glut
+
+Files: addons/jpgalleg/*
+Copyright: 2000-2006 Angelo Mottola
+License: Zlib
+
+Files: addons/loadpng/*
+Copyright: Peter Wright <tjaden@users.sf.net>
+License: Zlib
+Comment: The license was changed after the release of Allegro 4.4.2 from a 
+ "public domain" statement to Zlib, see
+ http://alleg.svn.sourceforge.net/viewvc/alleg?view=revision&revision=15483
+
+Files: addons/logg/*
+Copyright: Copyright (c) 2007 Trent Gamblin
+License: Expat
+
+Files: debian/*
+Copyright: 2012 Andreas Rönnquist <gusnan@gusnan.se>, Tobias Hansen <tobias.han@gmx.de>
+License: Zlib
+
+License: Allegro-gift-ware
+ Allegro is gift-ware. It was created by a number of people working in 
+ cooperation, and is given to you freely as a gift. You may use, modify, 
+ redistribute, and generally hack it about in any way you like, and you do
+ not have to give us anything in return.
+ .
+ However, if you like this product you are encouraged to thank us by making
+ a return gift to the Allegro community. This could be by writing an add-on
+ package, providing a useful bug report, making an improvement to the
+ library, or perhaps just releasing the sources of your program so that
+ other people can learn from them. If you redistribute parts of this code or
+ make a game using it, it would be nice if you mentioned Allegro somewhere
+ in the credits, but you are not required to do this. We trust you not to
+ abuse our generosity.
+ .
+ Disclaimer:
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+ SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+License: Zlib
+ This software is provided 'as-is', without any express or implied
+ warranty. In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+ claim that you wrote the original software. If you use this software
+ in a product, an acknowledgment in the product documentation would be
+ appreciated but is not required.
+ .
+ 2. Altered source versions must be plainly marked as such, and must not be
+ misrepresented as being the original software.
+ .
+ 3. This notice may not be removed or altered from any source
+ distribution.
+
+License: Expat
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License version 2 as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License along
+ with this program; if not, write to the Free Software Foundation, Inc.,
+ 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in /usr/share/common-licenses/GPL-2
+
+License: LGPL-2+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301, USA.
+ .
+ On Debian systems, the full text of the GNU Library General Public
+ License version 2 can be found in the folder
+ `/usr/share/common-licenses/'.
+
+License: glut
+ This program is freely distributable without licensing fees  and is
+ provided without guarantee or warrantee expressed or  implied. This
+ program is -not- in the public domain.
+ .
+ The following is from the copyright file of the glut Debian package:
+ .
+ Regarding the right to modify and distribute this library:
+ .
+ From: Mark Kilgard <mjk@nvidia.com>
+ Subject: Bug#131997: GLUT license
+ .
+ Anthony,
+ .
+ > Would it be possible for you to just make it absolutely clear that
+ > everyone's allowed to use, copy, and modify (and distribute their
+ > modifications) of libglut?
+ > 
+ > Just quoting the above and replying "Yes, that's fine" or similar
+ > would be okay.
+ .
+ Yes, that's fine.
