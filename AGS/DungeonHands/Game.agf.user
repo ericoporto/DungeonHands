@@ -3,6 +3,6 @@
 <AGSEditorUserData Version="3.0.2.1" VersionIndex="2" EditorVersion="3.4.0">
   <Component Name="SourceControl" />
   <WorkspaceState>
-    <LastBuildConfiguration>Debug</LastBuildConfiguration>
+    <LastBuildConfiguration>Release</LastBuildConfiguration>
   </WorkspaceState>
 </AGSEditorUserData>

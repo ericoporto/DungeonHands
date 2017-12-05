@@ -23,6 +23,7 @@ import void Cards_MC_EnableAllDrag();
 import void Cards_SetCardItemDisable(InventoryItem * icard);
 import void Cards_SetCardItemEnable(InventoryItem * icard);
 import bool Cards_isItemMonster(InventoryItem * invItm);
+import void Cards_delete_all_dynSprites();
 
 #define CARD_BACK_HERO_GRAPHIC 71
 #define CARD_BACK_MONSTER_GRAPHIC 62
@@ -35,3 +36,12 @@ import bool Cards_isItemMonster(InventoryItem * invItm);
 #define CCOLOR_GRAY 4
 #define RANK_SP1 8
 #define RANK_SP2 9
+
+#define DECK_MONSTER_GRAPHIC_CARD1 87
+#define DECK_MONSTER_GRAPHIC_CARD2 88
+#define DECK_MONSTER_GRAPHIC_CARD3 89
+#define DECK_MONSTER_GRAPHIC_CARD4 90
+#define DECK_HERO_GRAPHIC_CARD1 91 
+#define DECK_HERO_GRAPHIC_CARD2 92 
+#define DECK_HERO_GRAPHIC_CARD3 93 
+#define DECK_HERO_GRAPHIC_CARD4 94

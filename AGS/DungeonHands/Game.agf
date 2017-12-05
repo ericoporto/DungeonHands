@@ -30,7 +30,7 @@
       <InventoryHotspotMarkerCrosshairColor>0</InventoryHotspotMarkerCrosshairColor>
       <WalkInLookMode>False</WalkInLookMode>
       <AntiGlideMode>True</AntiGlideMode>
-      <DebugMode>True</DebugMode>
+      <DebugMode>False</DebugMode>
       <InventoryCursors>True</InventoryCursors>
       <HandleInvClicksInScript>False</HandleInvClicksInScript>
       <DisplayMultipleInventory>True</DisplayMultipleInventory>
@@ -74,7 +74,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Dungeon Hands</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>3</AudioIndexer>
+      <AudioIndexer>26</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
     </Settings>
     <LipSync>
@@ -1097,10 +1097,10 @@
           <GUIMain>
             <NormalGUI>
               <OnClick>gDeckMonster_OnClic</OnClick>
-              <Height>115</Height>
+              <Height>120</Height>
               <Width>83</Width>
               <Left>555</Left>
-              <Top>243</Top>
+              <Top>240</Top>
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
@@ -1108,7 +1108,7 @@
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>62</BackgroundImage>
+              <BackgroundImage>90</BackgroundImage>
               <ID>7</ID>
               <Name>gDeckMonster</Name>
             </NormalGUI>
@@ -1117,7 +1117,7 @@
           <GUIMain>
             <NormalGUI>
               <OnClick>gDeckHero_OnClick</OnClick>
-              <Height>115</Height>
+              <Height>120</Height>
               <Width>83</Width>
               <Left>2</Left>
               <Top>2</Top>
@@ -1128,7 +1128,7 @@
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
-              <BackgroundImage>71</BackgroundImage>
+              <BackgroundImage>94</BackgroundImage>
               <ID>8</ID>
               <Name>gDeckHero</Name>
             </NormalGUI>
@@ -1164,7 +1164,7 @@
               <Clickable>False</Clickable>
               <Visibility>Normal</Visibility>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>5</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -1199,7 +1199,7 @@
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>19</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -1207,7 +1207,399 @@
               <ID>11</ID>
               <Name>gTitleGui</Name>
             </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>52752</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">Art and Music by Ricardo Juchem[Game Design by Kamila Galvani[Code and Stuff by Erico Porto</Text>
+                <Height>200</Height>
+                <Locked>False</Locked>
+                <Width>200</Width>
+                <Left>8</Left>
+                <Top>4</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>Label17</Name>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>buttonClickToStart_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>360</Height>
+                <Locked>False</Locked>
+                <Width>640</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>2</ZOrder>
+                <ID>1</ID>
+                <Name>buttonClickToStart</Name>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>TopRight</TextAlignment>
+                <TextColor>52752</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">twitter @ricardojuchem[[twitter @eri0o</Text>
+                <Height>200</Height>
+                <Locked>False</Locked>
+                <Width>200</Width>
+                <Left>430</Left>
+                <Top>4</Top>
+                <ZOrder>1</ZOrder>
+                <ID>2</ID>
+                <Name>Label18</Name>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>59</Height>
+              <Width>180</Width>
+              <Left>230</Left>
+              <Top>30</Top>
+              <Clickable>False</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>11</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>83</BackgroundImage>
+              <ID>12</ID>
+              <Name>gHeroToMonster</Name>
+            </NormalGUI>
             <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>59</Height>
+              <Width>180</Width>
+              <Left>230</Left>
+              <Top>30</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>11</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>82</BackgroundImage>
+              <ID>13</ID>
+              <Name>gMonsterToHero</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>360</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>False</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>10</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>75</BackgroundImage>
+              <ID>14</ID>
+              <Name>gBgPause</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>360</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>17</ZOrder>
+              <BorderColor>32</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>32</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>15</ID>
+              <Name>gBlackScreen</Name>
+            </NormalGUI>
+            <Controls />
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>120</Height>
+              <Width>69</Width>
+              <Left>571</Left>
+              <Top>120</Top>
+              <Clickable>True</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>84</BackgroundImage>
+              <ID>16</ID>
+              <Name>gTopRightQuit</Name>
+            </NormalGUI>
+            <Controls>
+              <GUISlider>
+                <OnChange>SoundSlider_OnChange</OnChange>
+                <HandleImage>86</HandleImage>
+                <HandleOffset>0</HandleOffset>
+                <BackgroundImage>85</BackgroundImage>
+                <MinValue>0</MinValue>
+                <MaxValue>100</MaxValue>
+                <Value>100</Value>
+                <Height>53</Height>
+                <Locked>False</Locked>
+                <Width>17</Width>
+                <Left>25</Left>
+                <Top>49</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>SoundSlider</Name>
+              </GUISlider>
+              <GUIButton>
+                <OnClick>ButtonQuit_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>45</Width>
+                <Left>14</Left>
+                <Top>7</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>ButtonQuit</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>120</Height>
+              <Width>69</Width>
+              <Left>0</Left>
+              <Top>120</Top>
+              <Clickable>True</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>95</BackgroundImage>
+              <ID>17</ID>
+              <Name>gBottomLeftGui</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>ButtonTheRules_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>66</Height>
+                <Locked>False</Locked>
+                <Width>38</Width>
+                <Left>14</Left>
+                <Top>29</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>ButtonTheRules</Name>
+              </GUIButton>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>360</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>74</BackgroundImage>
+              <ID>18</ID>
+              <Name>gTheRules</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>buttonIReadTheRlz_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>360</Height>
+                <Locked>False</Locked>
+                <Width>640</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>1</ZOrder>
+                <ID>0</ID>
+                <Name>buttonIReadTheRlz</Name>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>42185</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">Click and Drag on cards to move them and CLick to CLose the Rules</Text>
+                <Height>19</Height>
+                <Locked>False</Locked>
+                <Width>513</Width>
+                <Left>55</Left>
+                <Top>321</Top>
+                <ZOrder>0</ZOrder>
+                <ID>1</ID>
+                <Name>Label19</Name>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>150</Height>
+              <Width>300</Width>
+              <Left>170</Left>
+              <Top>105</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>25</ZOrder>
+              <BorderColor>42185</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>32</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>19</ID>
+              <Name>gReallyQuit</Name>
+            </NormalGUI>
+            <Controls>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>42185</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">Do you Really Want to Quit?</Text>
+                <Height>36</Height>
+                <Locked>False</Locked>
+                <Width>167</Width>
+                <Left>72</Left>
+                <Top>20</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>Label20</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>42185</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">Yes, Quit!</Text>
+                <Height>32</Height>
+                <Locked>False</Locked>
+                <Width>59</Width>
+                <Left>30</Left>
+                <Top>70</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>Label21</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>42185</TextColor>
+                <Font>3</Font>
+                <Text xml:space="preserve">No, I changed my mind.</Text>
+                <Height>36</Height>
+                <Locked>False</Locked>
+                <Width>140</Width>
+                <Left>150</Left>
+                <Top>70</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>Label22</Name>
+              </GUILabel>
+              <GUIButton>
+                <OnClick>ButtonYesQuit_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>81</Height>
+                <Locked>False</Locked>
+                <Width>104</Width>
+                <Left>15</Left>
+                <Top>51</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>ButtonYesQuit</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>NoDontQuit_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopMiddle</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>87</Height>
+                <Locked>False</Locked>
+                <Width>148</Width>
+                <Left>141</Left>
+                <Top>52</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>NoDontQuit</Name>
+              </GUIButton>
+            </Controls>
           </GUIMain>
         </GUIs>
       </GUIFolder>
@@ -3318,16 +3710,38 @@
           </SpriteFolder>
           <SpriteFolder Name="Cursor_Monster">
             <SubFolders />
-            <Sprites />
+            <Sprites>
+              <Sprite Slot="76" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/monster_cursor.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="77" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/monster_cursor_over.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Cursor_Hero">
             <SubFolders />
-            <Sprites />
+            <Sprites>
+              <Sprite Slot="78" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/hero_cursor.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="79" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/hero_cursor_over.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Rules">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="74" Width="630" Height="360" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+              <Sprite Slot="74" Width="640" Height="360" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
                 <Source>
                   <FileName>img/rules/rules.png</FileName>
                 </Source>
@@ -3337,9 +3751,134 @@
           <SpriteFolder Name="actionBar">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="75" Width="400" Height="400" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+              <Sprite Slot="75" Width="640" Height="360" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
                 <Source>
                   <FileName>img/actionbar/bg.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="CursorMonsterToHero">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="80" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/cursor_monster_to_hero.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="CursorHeroToMonster">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="81" Width="12" Height="12" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/cursors/cursor_hero_to_monster.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="MonsterToHero">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="82" Width="180" Height="59" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>img/switch/monster_to_hero.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="HeroToMonster">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="83" Width="180" Height="59" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>img/switch/hero_to_monster.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="TopRight">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="84" Width="69" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/slider/right_corner_gui.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Slider">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="85" Width="17" Height="53" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/slider/slider_bg.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="86" Width="30" Height="11" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/slider/slider_indicator.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="DeckMonster">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="87" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_monster/deck_monster_card1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="88" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_monster/deck_monster_card2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="89" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_monster/deck_monster_card3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="90" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_monster/deck_monster_card4.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="DeckHero">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="91" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_hero/deck_hero_card1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="92" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_hero/deck_hero_card2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="93" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_hero/deck_hero_card3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="94" Width="83" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/deck_hero/deck_hero_card4.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="BotLeft">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="95" Width="69" Height="120" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
+                <Source>
+                  <FileName>img/slider/left_corner_gui.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
@@ -3434,6 +3973,54 @@
       <ScriptFolder Name="Main">
         <SubFolders />
         <ScriptAndHeaders>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>CardSound.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1984205035</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>CardSound.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1984205035</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>SetMouseTo.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>63276132</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>SetMouseTo.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>63276132</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
@@ -3682,9 +4269,286 @@
           </AudioClipFolder>
           <AudioClipFolder Name="Sounds">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aCardFan1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardFan1.wav</SourceFileName>
+                <Index>4</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardFan2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardFan2.wav</SourceFileName>
+                <Index>5</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardOpenPackage1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardOpenPackage1.wav</SourceFileName>
+                <Index>6</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardOpenPackage2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardOpenPackage2.wav</SourceFileName>
+                <Index>7</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:22Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardPlace1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardPlace1.wav</SourceFileName>
+                <Index>8</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:29Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardPlace2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardPlace2.wav</SourceFileName>
+                <Index>9</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:32Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardPlace3</ScriptName>
+                <SourceFileName>audio/card_sounds/cardPlace3.wav</SourceFileName>
+                <Index>10</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:29Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardPlace4</ScriptName>
+                <SourceFileName>audio/card_sounds/cardPlace4.wav</SourceFileName>
+                <Index>11</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:30Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardShove1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardShove1.wav</SourceFileName>
+                <Index>12</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardShove2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardShove2.wav</SourceFileName>
+                <Index>13</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardShove3</ScriptName>
+                <SourceFileName>audio/card_sounds/cardShove3.wav</SourceFileName>
+                <Index>14</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardShove4</ScriptName>
+                <SourceFileName>audio/card_sounds/cardShove4.wav</SourceFileName>
+                <Index>15</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:23Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardShuffle</ScriptName>
+                <SourceFileName>audio/card_sounds/cardShuffle.wav</SourceFileName>
+                <Index>16</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:24Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide1.wav</SourceFileName>
+                <Index>17</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:30Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide2.wav</SourceFileName>
+                <Index>18</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide3</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide3.wav</SourceFileName>
+                <Index>19</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide4</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide4.wav</SourceFileName>
+                <Index>20</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide5</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide5.wav</SourceFileName>
+                <Index>21</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:31Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide6</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide6.wav</SourceFileName>
+                <Index>22</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:32Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide7</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide7.wav</SourceFileName>
+                <Index>23</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:29Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardSlide8</ScriptName>
+                <SourceFileName>audio/card_sounds/cardSlide8.wav</SourceFileName>
+                <Index>24</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-25 15:05:30Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardTakeOutPackage1</ScriptName>
+                <SourceFileName>audio/card_sounds/cardTakeOutPackage1.wav</SourceFileName>
+                <Index>25</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:24Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aCardTakeOutPackage2</ScriptName>
+                <SourceFileName>audio/card_sounds/cardTakeOutPackage2.wav</SourceFileName>
+                <Index>26</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>WAV</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2012-10-27 22:07:24Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
-              <DefaultVolume>100</DefaultVolume>
+              <DefaultVolume>60</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
               <DefaultRepeat>False</DefaultRepeat>
               <DefaultBundlingType>InGameEXE</DefaultBundlingType>
