@@ -28,9 +28,13 @@ if not exist %WGET% (
 
 set DOWNLOADER=%WGET% --no-check-certificate --quiet -N -P %CACHE%
 
-rem we assume 4.0 .NET Framework is already installed
-echo install 3.5 .NET Framework 
+echo Installing 3.5 .NET Framework 
 DISM /Online /Enable-Feature:NetFx3 /All
+echo 3.5 .NET Framework Installed
+
+echo Installing 4.0 .NET Framework 
+DISM /Online /Enable-Feature:NetFx4 /All
+echo 4.0 .NET Framework Installed
 
 set INSTALL[0][name]=7-Zip 18.05
 set INSTALL[0][version]=*
@@ -90,6 +94,8 @@ for /f "tokens=1,2,*" %%i in ('reg query %UNINSTALL% /s /f Display /t REG_SZ') d
 		set DISPLAYNAME=%%k
 	) else if %%i==DisplayVersion (
 		set DISPLAYVERSION=%%k
+	) else if %%i==DisplayIcon (
+		rem do nothing
 	) else (
 		set DISPLAYNAME=
 		set DISPLAYVERSION=
