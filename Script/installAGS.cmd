@@ -38,7 +38,7 @@ set INSTALL[1][name]=Adventure Game Studio 3.4.3
 set INSTALL[1][version]=3.4.3.1
 set INSTALL[1][url]=https://github.com/adventuregamestudio/ags/releases/download/v.3.4.3.1/AGS-3.4.3-P1.exe
 set INSTALL[1][md5]=89ef0fcb9ef460352039d2bb589eff31
-set INSTALL[1][cmd]=start /wait  %CACHE%\AGS-3.4.3-P1.exe /SP- /VERYSILENT /NORESTART /MERGETASKS="!desktopicon"
+set INSTALL[1][cmd]=start /b /wait  %CACHE%\AGS-3.4.3-P1.exe /SP- /VERYSILENT /NORESTART /MERGETASKS="!desktopicon"
 
 for /l %%n in (0,1,1) do (
 	echo Checking installation: !INSTALL[%%n][name]!
