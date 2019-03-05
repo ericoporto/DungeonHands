@@ -28,7 +28,8 @@ if not exist %WGET% (
 
 set DOWNLOADER=%WGET% --no-check-certificate --quiet -N -P %CACHE%
 
-rem we will use Dism to install 3.5 .NET Framework and assuming 4.0 is installed
+rem we assume 4.0 .NET Framework is already installed
+echo install 3.5 .NET Framework 
 DISM /Online /Enable-Feature:NetFx3 /All
 
 set INSTALL[0][name]=7-Zip 18.05
