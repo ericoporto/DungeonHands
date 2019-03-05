@@ -2,3 +2,4 @@ version: 1.0.{build}
 image: Visual Studio 2015
 build_script:
   - call Script/installAGS.cmd
+  - call Script/buildAGSGame.cmd
