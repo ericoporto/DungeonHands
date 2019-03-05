@@ -5,3 +5,9 @@ init:
 build_script:
   - call Script/installAGS.cmd
   - call Script/buildAGSGame.cmd
+  - call Script/packageArtifacts.cmd
+artifacts:
+  - path: Compiled/Windows/DungeonHands_Windows.zip
+    name: DungeonHands_Windows.zip
+  - path: Compiled/Windows/DungeonHands_Linux.tar.gz
+    name: DungeonHands_Linux.tar.gz
