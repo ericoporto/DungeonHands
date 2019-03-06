@@ -1,0 +1,20 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'vs2015-win2012r2'
+
+steps:
+- task: BatchScript@1
+  inputs:
+    filename: Script/installAGS.cmd
+
+- task: BatchScript@1
+  inputs:
+    filename: Script/buildAGSGame.cmd
+    arguments: $(Build.SourcesDirectory)
+
+- task: BatchScript@1
+  inputs:
+    filename: Script/packageArtifacts.cmd
+    arguments: $(Build.SourcesDirectory)
