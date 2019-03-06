@@ -1,11 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
 
-set AGS=%SYSTEMDRIVE%\AGS
-set CACHE=%AGS%\Cache
-set BUILD=%AGS%\Build
-set FCIV=%AGS%\fciv.exe
-set WGET=%AGS%\wget.exe
+set TEMP=%SYSTEMDRIVE%\TEMP
+set CACHE=%TEMP%\Cache
+set FCIV=%TEMP%\fciv.exe
+set WGET=%TEMP%\wget.exe
 set BITSADMIN=bitsadmin /transfer bootstrap /download /priority FOREGROUND
 set SEVENZIP="C:\Program Files (x86)\7-Zip\7z.exe"
 set UNINSTALL=HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall
@@ -15,14 +14,14 @@ if not exist %CACHE% mkdir %CACHE%
 if not exist %FCIV% (
 	echo Downloading fciv...
 	%BITSADMIN% https://download.microsoft.com/download/c/f/4/cf454ae0-a4bb-4123-8333-a1b6737712f7/Windows-KB841290-x86-ENU.exe %CACHE%\Windows-KB841290-x86-ENU.exe
-	%CACHE%\Windows-KB841290-x86-ENU.exe /Q /T:%AGS% && del /f %AGS%\readme.txt
+	%CACHE%\Windows-KB841290-x86-ENU.exe /Q /T:%TEMP% && del /f %TEMP%\readme.txt
 	if not exist %FCIV% exit /b 1
 )
 
 if not exist %WGET% (
 	echo Downloading wget...
 	%BITSADMIN% http://eternallybored.org/misc/wget/1.19.4/32/wget.exe %CACHE%\wget.exe
-	call :VERIFY 3dadb6e2ece9c4b3e1e322e617658b60 %CACHE%\wget.exe && move %CACHE%\wget.exe %AGS%
+	call :VERIFY 3dadb6e2ece9c4b3e1e322e617658b60 %CACHE%\wget.exe && move %CACHE%\wget.exe %TEMP%
 	if not exist %WGET% exit /b 1
 )
 

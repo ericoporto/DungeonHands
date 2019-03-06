@@ -7,7 +7,7 @@ build_script:
   - call Script/buildAGSGame.cmd
   - call Script/packageArtifacts.cmd
 artifacts:
-  - path: Compiled/Windows/DungeonHands_Windows.zip
-    name: DungeonHands_Windows.zip
-  - path: Compiled/Linux/DungeonHands_Linux.tar.gz
-    name: DungeonHands_Linux.tar.gz
+  - path: Compiled/Windows/DungeonHands-windows.zip
+    name: DungeonHands-windows.zip
+  - path: Compiled/Linux/DungeonHands-linux.tar.gz
+    name: DungeonHands-linux.tar.gz
