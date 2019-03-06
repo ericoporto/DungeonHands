@@ -3,9 +3,9 @@ image: Visual Studio 2015
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 build_script:
-  - call Script/installAGS.cmd
-  - call Script/buildAGSGame.cmd
-  - call Script/packageArtifacts.cmd
+  - call ags-game-ci-utils/installAGS.cmd
+  - call ags-game-ci-utils/buildAGSGame.cmd
+  - call ags-game-ci-utils/packageArtifacts.cmd
 artifacts:
   - path: Compiled/Windows/DungeonHands-windows.zip
     name: DungeonHands-windows.zip

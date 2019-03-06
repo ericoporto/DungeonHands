@@ -7,14 +7,14 @@ pool:
 steps:
 - task: BatchScript@1
   inputs:
-    filename: Script/installAGS.cmd
+    filename: ags-game-ci-utils/installAGS.cmd
 
 - task: BatchScript@1
   inputs:
-    filename: Script/buildAGSGame.cmd
+    filename: ags-game-ci-utils/buildAGSGame.cmd
     arguments: $(Build.SourcesDirectory)
 
 - task: BatchScript@1
   inputs:
-    filename: Script/packageArtifacts.cmd
+    filename: ags-game-ci-utils/packageArtifacts.cmd
     arguments: $(Build.SourcesDirectory)
