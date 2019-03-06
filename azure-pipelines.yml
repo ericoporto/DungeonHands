@@ -5,6 +5,9 @@ pool:
   vmImage: 'vs2015-win2012r2'
 
 steps:
+- checkout: self  # self represents the repo where the initial Pipelines YAML file was found
+  submodules: recursive 
+
 - task: BatchScript@1
   inputs:
     filename: ags-game-ci-utils/installAGS.cmd
