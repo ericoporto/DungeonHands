@@ -1,0 +1,3 @@
+[submodule "ags-game-ci-utils"]
+	path = ags-game-ci-utils
+	url = https://github.com/ericoporto/ags-game-ci-utils.git

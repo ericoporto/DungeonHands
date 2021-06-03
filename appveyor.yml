@@ -1,16 +1,27 @@
 version: 1.0.{build}
-image: Visual Studio 2015
-init:
-  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-install:
-  - cd %APPVEYOR_BUILD_FOLDER%
-  - git submodule update --init --recursive
+image: Visual Studio 2019
+
 build_script:
-  - call ags-game-ci-utils/installAGS.cmd
-  - call ags-game-ci-utils/buildAGSGame.cmd
-  - call ags-game-ci-utils/packageArtifacts.cmd
+  - call dev_scripts\install_dependencies.cmd
+  - call dev_scripts\build_game.cmd
+  - call dev_scripts\package_game.cmd
+
 artifacts:
-  - path: Compiled/Windows/DungeonHands-windows.zip
-    name: DungeonHands-windows.zip
-  - path: Compiled/Linux/DungeonHands-linux.tar.gz
-    name: DungeonHands-linux.tar.gz
+- path: dev_scripts\DIST\dungeon_hands_linux.tar.gz
+  name: dungeon_hands_linux.tar.gz
+- path: dev_scripts\DIST\dungeon_hands_windows.zip
+  name: dungeon_hands_windows.zip
+- path: dev_scripts\DIST\dungeon_hands_web.zip
+  name: dungeon_hands_web.zip
+  
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: wZdCrU9dcec59hLKrRi7G6N4mWamWoDHcGTe4T2P5YJsV7CEYCyEcDwulO0V3bzK
+  artifact: dungeon_hands_web.tar.gz, dungeon_hands_windows.zip, dungeon_hands_linux.tar.gz
+  draft: false
+  prerelease: false
+  force_update: true          # it can't edit a release artifact if this is false
+  on:
+    branch: main              # release from main branch only
+    appveyor_repo_tag: true   # deploy on tag push only
