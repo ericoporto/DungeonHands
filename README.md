@@ -1,5 +1,6 @@
 # DungeonHands
 GitHub Actions: [![CI](https://github.com/ericoporto/DungeonHands/actions/workflows/main.yml/badge.svg)](https://github.com/ericoporto/DungeonHands/actions/workflows/main.yml)
+
 AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/t4k6scc08hsqn750?svg=true)](https://ci.appveyor.com/project/ericoporto/dungeonhands)
 
 DungeonHands game source, Made in Adventure Game Studio.
