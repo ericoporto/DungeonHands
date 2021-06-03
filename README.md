@@ -3,9 +3,11 @@ GitHub Actions: [![CI](https://github.com/ericoporto/DungeonHands/actions/workfl
 
 AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/t4k6scc08hsqn750?svg=true)](https://ci.appveyor.com/project/ericoporto/dungeonhands)
 
+[![image](https://user-images.githubusercontent.com/2244442/120691969-8b2efa80-c47d-11eb-880b-640e4a9475c5.png)](https://itch.io/embed-upload/3937817?color=1F1E3B)
+
 DungeonHands game source, Made in Adventure Game Studio. This game was made for LudumDare 40, get it on [eri0o.itch.io/dungeon-hands](https://eri0o.itch.io/dungeon-hands).
 
-Learn more on it's [AGS Forums Page](https://www.adventuregamestudio.co.uk/forums/index.php?topic=55546.0)
+Learn more on it's [AGS Forums Page](https://www.adventuregamestudio.co.uk/forums/index.php?topic=55546.0).
 
 ## Continuous Integration
 
