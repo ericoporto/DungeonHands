@@ -32,3 +32,27 @@ jobs:
           path: |
             dev_scripts/DIST/*
           if-no-files-found: error
+          
+  itch:
+    name: Upload to itch.io (${{ matrix.channel }})
+    runs-on: ubuntu-latest
+    needs: [build]
+
+    steps:
+    - name: Download artifact
+      id: download
+      uses: actions/download-artifact@v2
+      with:
+        name: all_game_builds.zip 
+        path: itch_upload
+    - name: Download Butler
+      run: |
+        curl -JOL https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+        unzip butler-linux-amd64.zip
+    - name: Push to itch.io
+      env:
+        BUTLER_API_KEY: ${{ secrets.BUTLER_CREDENTIALS }}
+      run: |
+        ./butler push itch_upload/dungeon_hands_windows.zip eri0o/dungeon-hands:windows
+        ./butler push itch_upload/dungeon_hands_linux.tar.gz eri0o/dungeon-hands:linux
+        ./butler push itch_upload/dungeon_hands_web.zip eri0o/dungeon-hands:web
