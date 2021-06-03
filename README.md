@@ -3,17 +3,9 @@ GitHub Actions: [![CI](https://github.com/ericoporto/DungeonHands/actions/workfl
 
 AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/t4k6scc08hsqn750?svg=true)](https://ci.appveyor.com/project/ericoporto/dungeonhands)
 
-DungeonHands game source, Made in Adventure Game Studio.
+DungeonHands game source, Made in Adventure Game Studio. This game was made for LudumDare 40, get it on http://eri0o.itch.io/dungeon-hands
 
-This projects uses git submodule, so clone as below:
-
-    git clone --recurse-submodules https://github.com/ericoporto/DungeonHands.git
-
-Depending on git version, do after clone, inside the folder:
-
-    git submodule update --init --recursive
-
-This game was made for LudumDare 40, get it on http://eri0o.itch.io/dungeon-hands
+I am maintaining this game now as an example of using Continuous Integration with Adventure Game Studio.
 
 ## Here are the rules
 
