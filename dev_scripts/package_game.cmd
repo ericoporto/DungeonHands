@@ -51,8 +51,8 @@ pushd "%BUILDDIRWINDOWS%\.."
 "%TAR%" -acf "%DISTDIR%\%GAME_WINDOWS_NAME%.zip" "%GAME_WINDOWS_NAME%"
 popd
 
-pushd "%BUILDDIRWEB%\.."
-"%TAR%" -acf "%DISTDIR%\%GAME_WEB_NAME%.zip" "%GAME_WEB_NAME%"
+pushd "%BUILDDIRWEB%\"
+"%TAR%" -acf "%DISTDIR%\%GAME_WEB_NAME%.zip" *
 popd
 
 pushd "%DISTDIR%"
