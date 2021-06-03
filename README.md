@@ -5,7 +5,15 @@ AppVeyor: [![Build status](https://ci.appveyor.com/api/projects/status/t4k6scc08
 
 DungeonHands game source, Made in Adventure Game Studio. This game was made for LudumDare 40, get it on http://eri0o.itch.io/dungeon-hands
 
+## Continuous Integration
+
 I am maintaining this game now as an example of using Continuous Integration with Adventure Game Studio.
+
+This repository includes
+- AppVeyor build and packaging example
+- GitHub Actions build and packaging example
+- Automation for Web Builds
+- itch.io buttler integration through Github Actions
 
 ## Here are the rules
 
