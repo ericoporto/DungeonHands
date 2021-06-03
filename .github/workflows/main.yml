@@ -25,3 +25,9 @@ jobs:
       - name: Package game
         run: call dev_scripts\package_game.cmd
         shell: cmd
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2        
+        with:
+          path: |
+            dev_scripts/DIST/*          
+          if-no-files-found: error
