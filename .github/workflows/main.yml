@@ -25,24 +25,10 @@ jobs:
       - name: Package game
         run: call dev_scripts\package_game.cmd
         shell: cmd
-      - name: Upload Windows Build
+      - name: Upload All Builds
         uses: actions/upload-artifact@v2        
         with:
-          name: dungeon_hands_windows.zip  
+          name: all_game_builds.zip  
           path: |
-            dev_scripts/DIST/dungeon_hands_windows.zip          
-          if-no-files-found: error          
-      - name: Upload Linux Build
-        uses: actions/upload-artifact@v2        
-        with:
-          name: dungeon_hands_linux.tar.gz  
-          path: |
-            dev_scripts/DIST/dungeon_hands_linux.tar.gz        
-          if-no-files-found: error          
-      - name: Upload Web Build
-        uses: actions/upload-artifact@v2        
-        with:
-          name: dungeon_hands_web.zip 
-          path: |
-            dev_scripts/DIST/dungeon_hands_web.zip        
+            dev_scripts/DIST/*
           if-no-files-found: error
