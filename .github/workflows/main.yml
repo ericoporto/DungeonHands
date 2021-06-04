@@ -34,7 +34,7 @@ jobs:
           if-no-files-found: error
           
   itch:
-    name: Upload to itch.io (${{ matrix.channel }})
+    name: Upload to itch.io 
     runs-on: ubuntu-latest
     needs: [build]
 
