@@ -35,4 +35,4 @@ With Monster Overlord cards and Heroes cards on the table, the dungeon encounter
 
 The Rank is the number on the corner, Class is represented by the symbol and color of the card. Special cards have no Rank or Class.
 
-The player who draws the last deck card loses.
+The player who draws the last deck card loses. 
